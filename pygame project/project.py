@@ -1,6 +1,3 @@
-Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 18:41:36) [MSC v.1900 64 bit (AMD64)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> 
 import pygame
  
 # Define some colors
@@ -10,33 +7,32 @@ BLACK = (0, 0, 0)
 # Call this function so the Pygame library can initialize itself
 pygame.init()
  
-# Create an 800x600 sized screen
-screen = pygame.display.set_mode([800, 600])
+# Create an 911x364 sized screen
+screen = pygame.display.set_mode([512, 1024])
  
 # This sets the name of the window
 pygame.display.set_caption('CMSC 150 is cool')
  
 clock = pygame.time.Clock()
- 
-# Before the loop, load the sounds:
-click_sound = pygame.mixer.Sound("laser5.ogg")
- 
+  
 # Set positions of graphics
 background_position = [0, 0]
  
 # Load and set up graphics.
-background_image = pygame.image.load("background.png").convert()
-player_image = pygame.image.load("plane.jpg").convert()
+background_image = pygame.image.load("heroofstorm.jpg")
+player_image = pygame.image.load("hoswser.jpg")
 player_image.set_colorkey(BLACK)
  
 done = False
  
 while not done:
+    x = 0
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True
-        elif event.type == pygame.MOUSEBUTTONDOWN:
-            click_sound.play()
+
+        
+
  
     # Copy image to screen:
     screen.blit(background_image, background_position)
@@ -53,5 +49,6 @@ while not done:
     pygame.display.flip()
  
     clock.tick(60)
- 
+
+        
 pygame.quit()
