@@ -208,7 +208,7 @@ def runGame():
             if event.type == KEYUP:
                 if (event.key == K_p):
   
-                    DISPLAYSURF.fill(BGCOLOR)
+                    DISPLAYSURF.fill(Background)
                     pygame.mixer.music.stop()
                     showTextScreen('Paused') 
                     pygame.mixer.music.play(-1, 0.0)
