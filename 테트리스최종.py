@@ -33,7 +33,7 @@ BORDERCOLOR = BLUE
 Background = WHITE
 
 BG = pygame.image.load("heroofstorm.jpg")
-GAMEPAD = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
+GAMEPAD = pygame.display.set_mode([650,600])
 
 TEXTCOLOR = WHITE
 TEXTSHADOWCOLOR = GRAY
@@ -173,6 +173,7 @@ def main():
         pygame.mixer.music.play(-1, 0.0)
         runGame()
         pygame.mixer.music.stop()
+        showTextScreen('Game Over')
         GAMEPAD.blit(BG, [0, 0])
         
 
