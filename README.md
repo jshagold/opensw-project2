@@ -14,21 +14,32 @@
 
 
 ## (3)
+![](https://github.com/jshagold/opensw-project2/blob/master/%ED%85%8C%ED%8A%B8%EB%A6%AC%EC%8A%A43.PNG)
 q를 누르면 일시정지 화면이 나온다.
 
 
 
 ## (4)
+![](https://github.com/jshagold/opensw-project2/blob/master/%ED%85%8C%ED%8A%B8%EB%A6%AC%EC%8A%A42.PNG)
 게임오버화면이뜰때 아무버튼이나 누르면 다시시작.
 
 
 
-## (5)
+## (7)
+![](https://github.com/jshagold/opensw-project2/blob/master/%ED%85%8C%ED%8A%B8%EB%A6%AC%EC%8A%A44.PNG)
+score가 커질수록 Level이 높아져서 속도가 빨라진다.
+
+
+
+
+## (6)
 q,w키 = 회전
 
 a,d,s,왼쪽,오른쪽,아래 = 이동
 
 space키 = 빠른이동(아래방향)
+
+
 
 
 
